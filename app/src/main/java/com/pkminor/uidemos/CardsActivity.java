@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class CardsActivity extends AppCompatActivity {
 
+    private String title;
     private String lorem;
     private String[] topicDetails;
     private ListView listViewDetails;
@@ -24,7 +25,7 @@ public class CardsActivity extends AppCompatActivity {
         lorem = getResources().getString(R.string.lorem);
         topicDetails = new String[] { lorem,lorem,lorem,lorem,lorem};
 
-        String title = getIntent().getStringExtra("title");
+        title = getIntent().getStringExtra("title");
         setTitle(title);
 
         listViewDetails = (ListView) findViewById(R.id.listViewDetails);
