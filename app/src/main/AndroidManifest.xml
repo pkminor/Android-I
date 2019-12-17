@@ -14,7 +14,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pkminor.uidemos.CardsActivity"></meta-data>
         </activity>
-        <activity android:name=".CardsActivity">
+        <activity android:name=".CardsActivity" android:launchMode="singleTask">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pkminor.uidemos.MainActivity"></meta-data>
